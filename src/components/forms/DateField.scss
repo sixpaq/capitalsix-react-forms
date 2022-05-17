@@ -1,0 +1,15 @@
+.date {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  input:nth-child(1) {
+    width: 25%;
+  }
+  input:nth-child(2) {
+    width: 25%;
+  }
+  input:nth-child(3) {
+    width: 40%;
+  }
+}

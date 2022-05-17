@@ -1,0 +1,50 @@
+.field {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  padding: 1rem;
+
+  label {
+    font-size: 14px;
+    color: #777;
+  }
+
+  input {
+    width: 100%;
+    border: none; //1px solid rgba(#005b8c, 0.2);
+  }
+
+  input:focus {
+    outline: none;
+    border: none; // 1px solid #005b8c;
+  }
+
+  input + label {
+    margin-left: 0.5rem;
+  }
+
+  .indicator {
+    display: inline;
+    margin-left: .25rem;
+
+    color: green;
+  }
+
+  &.invalid {
+    .indicator {
+      color: red;
+    }
+  }
+}
+
+.field.invalid {
+  input,
+  .btn {
+    border-color: rgba(indianred, 0.4);
+  }
+
+  input:focus {
+    border-color: indianred;
+  }
+}

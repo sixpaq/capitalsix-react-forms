@@ -1,0 +1,22 @@
+.choice-field {
+  .btn {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: rgba(#000, 0.09);
+    background-color: #fff;
+    color: #000;
+    border-radius: 0;
+    height: 28px;
+
+    &:focus {
+      box-shadow: 0px 0px 5px 0px rgba(#005b8c, 0.5);
+    }
+  }
+
+  .btn-primary {
+    background-color: #005b8c;
+    color: #fff;
+  }
+}
